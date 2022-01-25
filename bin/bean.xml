@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+	<!-- setter injection
+	<bean id="student" class="com.NepalCode.SpringDependency.Student"> 
+		<property name="studentName" value="MadanGhale" /> <property name="stuid" 
+		value="2" /> </bean> <bean id="student1" class="com.NepalCode.SpringDependency.Student"> 
+		<property name="studentName" value="Demon Rai" /> <property name="stuid" 
+		value="3" /> </bean>
+	 -->
+		
+		<bean id="student" class="com.NepalCode.SpringDependency.Student">
+		<constructor-arg name="studentName" value="Sanju" type="java.lang.String"/>
+		<constructor-arg name="stuid" value="1"/>
+		</bean>
+		
+		<bean id="student1" class="com.NepalCode.SpringDependency.Student">
+		<constructor-arg name="stuid" value="4" type="int"/>
+		</bean>
+
+
+</beans>
